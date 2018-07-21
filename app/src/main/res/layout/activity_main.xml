@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5560"
+    tools:context="com.example.hrsh.calculator.MainActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/userweight"
+        android:hint="Enter Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteY="131dp"
+        tools:layout_editor_absoluteX="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <EditText
+        android:id="@+id/userheight"
+        android:hint="Enter Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteY="234dp"
+        tools:layout_editor_absoluteX="100dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/userweight"
+        android:layout_alignLeft="@+id/userweight"
+        android:layout_alignStart="@+id/userweight"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE BMI"
+        tools:layout_editor_absoluteY="341dp"
+        tools:layout_editor_absoluteX="127dp"
+        android:onClick="buttonclicked"
+        android:layout_below="@+id/userheight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+    <TextView
+        android:id="@+id/userbmi"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI"
+        tools:layout_editor_absoluteY="448dp"
+        tools:layout_editor_absoluteX="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+</RelativeLayout>
