@@ -17,8 +17,8 @@
         android:layout_height="wrap_content"
         android:text="BMI CALCULATOR"
         android:textSize="40dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="32dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
